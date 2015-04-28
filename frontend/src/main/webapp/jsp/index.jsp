@@ -1,4 +1,4 @@
-<!--
+<%--
   #%L
   eap-helloworld-frontend
   %%
@@ -16,23 +16,14 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   #L%
-  -->
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
-
-    <servlet>
-        <servlet-name>helloworld</servlet-name>
-        <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
-        </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>helloworld</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
-
-</web-app>
+  --%>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>EAP - HelloWorld</title>
+</head>
+<body>
+<h3>Hello...</h3>
+</body>
+</html>

@@ -18,12 +18,13 @@
   #L%
   --%>
 <!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
 <head lang="en">
     <meta charset="utf-8">
-    <title>EAP - Hello?</title>
+    <title>EAP - HelloWorld</title>
 </head>
 <body>
-<h3>Helllloooooo?</h3>
+<h3>... is it '${personname}' your looking for?</h3>
 </body>
 </html>
