@@ -10,7 +10,6 @@
         <relativePath>../</relativePath>
     </parent>
     <artifactId>eap-helloworld-backend</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
 

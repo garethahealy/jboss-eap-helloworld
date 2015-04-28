@@ -19,6 +19,9 @@
  */
 package com.garethahealy.eap.frontend;
 
+import com.garethahealy.eap.backend.services.MeService;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +29,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MeController {
+
+    @Autowired
+    private MeService meService;
 
     @RequestMapping(value = "/me")
     public ModelAndView index() {

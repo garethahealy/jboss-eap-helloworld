@@ -10,7 +10,6 @@
         <relativePath>../</relativePath>
     </parent>
     <artifactId>eap-helloworld-frontend</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <name>${project.artifactId}</name>
     <packaging>war</packaging>
 
@@ -19,6 +18,14 @@
         <developerConnection>scm:git:https://github.com/garethahealy/jboss-eap-helloworld/tree/master</developerConnection>
         <url>https://github.com/garethahealy/jboss-eap-helloworld/tree/master</url>
     </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.garethahealy.eap</groupId>
+            <artifactId>eap-helloworld-backend</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
