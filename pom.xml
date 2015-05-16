@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.garethahealy</groupId>
         <artifactId>eap-parent</artifactId>
-        <version>1.0.5-SNAPSHOT</version>
+        <version>1.0.6</version>
         <relativePath>../poms/eap-parent</relativePath>
     </parent>
     <groupId>com.garethahealy.eap</groupId>
