@@ -4,19 +4,13 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.garethahealy.eap</groupId>
-        <artifactId>eap-helloworld</artifactId>
+        <groupId>com.garethahealy.jboss-eap-helloworld</groupId>
+        <artifactId>jboss-eap-helloworld-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
     <artifactId>eap-helloworld-backend</artifactId>
-    <name>${project.artifactId}</name>
+    <name>GarethHealy :: JBoss EAP HelloWorld :: Backend</name>
     <packaging>jar</packaging>
-
-    <scm>
-        <connection>scm:git:https://github.com/garethahealy/jboss-eap-helloworld/tree/master</connection>
-        <developerConnection>scm:git:https://github.com/garethahealy/jboss-eap-helloworld/tree/master</developerConnection>
-        <url>https://github.com/garethahealy/jboss-eap-helloworld/tree/master</url>
-    </scm>
 
 </project>

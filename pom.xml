@@ -4,15 +4,15 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.garethahealy</groupId>
-        <artifactId>eap-parent</artifactId>
-        <version>1.1.0</version>
-        <relativePath>../poms/eap-parent</relativePath>
+        <groupId>com.garethahealy.poms</groupId>
+        <artifactId>jboss-eap-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath/>
     </parent>
-    <groupId>com.garethahealy.eap</groupId>
-    <artifactId>eap-helloworld</artifactId>
+    <groupId>com.garethahealy.jboss-eap-helloworld</groupId>
+    <artifactId>jboss-eap-helloworld-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>${project.artifactId}</name>
+    <name>GarethHealy :: JBoss EAP HelloWorld Parent</name>
     <packaging>pom</packaging>
 
     <scm>

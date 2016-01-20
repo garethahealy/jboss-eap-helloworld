@@ -1,6 +1,6 @@
 /*
  * #%L
- * eap-helloworld-backend
+ * GarethHealy :: JBoss EAP HelloWorld :: Backend
  * %%
  * Copyright (C) 2013 - 2015 Gareth Healy
  * %%

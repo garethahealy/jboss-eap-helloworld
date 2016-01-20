@@ -1,6 +1,6 @@
 <%--
   #%L
-  eap-helloworld-frontend
+  GarethHealy :: JBoss EAP HelloWorld :: Frontend
   %%
   Copyright (C) 2013 - 2015 Gareth Healy
   %%
