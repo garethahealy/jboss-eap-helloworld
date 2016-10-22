@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.garethahealy.poms</groupId>
         <artifactId>jboss-eap-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.3-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <groupId>com.garethahealy.jboss-eap-helloworld</groupId>
