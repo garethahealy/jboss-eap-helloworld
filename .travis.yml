@@ -1,16 +1,28 @@
 sudo: required
 dist: trusty
+env:
+  global:
+  - secure: MbAM25Xknlf0h9PXradze5PDULdNB5e9X48VOBXRw6FeqUAzaibOEel8ZFAg/nkSsmAGl3IyYeOLIb8pLcG2Bm2Btsi7KVbd3n7T8L2NI4LDELb2CnNFez1dGvcVtyjNbvSzfBZL/B+q/oJjC8IQAYytKdt3fh4x5kUumRAg05o=
+  - secure: Tbwut225S3/bdpbSp3hhJAQntw8LGqV55x+YibZvaRRP/u+P+bgxtgPSRt9C/0tu6L7Ox/YOoZPxkI98i+7Ngd3jf3rFcprxv9pHKzH8Ar8FsbpkXQN+m0NQmzdMRoLuppBDpnE8I7r7ZrLi2N1G9LtVirbG8TmJw2M62qHmDaQ=
+  - secure: fPNDNV4OYEz9msOGRA6s0WUWvozhms8T9/C4Pf/c3XahMZCWebpCNXOuRXoJtI4iV8RYLT8sAfXXY6lgS664U9wa17ygIAX+DbFn2Aef2y8mf6AInyxycm94qio9oVGkSXvN6rMgCk3mfdunD+9TBS+fbMa5fBtXOJ3psgfjs3Q=
+  - secure: XH3XYN3oZPEzFyFCbOhjy62lApEEjYEILLUAQm/Fqkk9UgTZKT1e3n1OQI+Mvu2LvldqvhTfa72cVuZVMPht/u/et8JGy2O9TwtRm6X03aAPzAQ+NgFsq6uYvFGnfLVixE3aVu+6N3wX2UXK/46GWgYFYX13LqbeDVUTX1TZb9A=
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
+before_install:
+- bash .travis/deploy-codesigning.sh
 install:
-  - bash .travis/update.sh
-  - export M2_HOME=/usr/share/maven3 && export PATH=${M2_HOME}/bin:${PATH} && export MAVEN_OPTS="-Xms2048m -Xmx2048m"
-  - java -version && javac -version && mvn -version -B
+- bash .travis/update.sh
+- export M2_HOME=/usr/share/maven3 && export PATH=${M2_HOME}/bin:${PATH} && export MAVEN_OPTS="-Xms2048m -Xmx2048m"
+- java -version && javac -version && mvn -version -B
 before_script:
-  - mvn dependency:resolve-plugins -B
+- mvn dependency:resolve-plugins -B
 script:
-  - mvn clean install -B -Dgpg.skip=true
+- mvn clean install -B
+deploy:
+  provider: script
+  script: bash .travis/deploy.sh
+  skip_cleanup: true
 cache:
   directories:
   - $HOME/.m2
