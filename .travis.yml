@@ -4,7 +4,7 @@ addons:
   sonarcloud:
     organization: garethahealy-github
     token:
-      secure: FgIExxDVVAj35SMUl/zppPGiQjzgK8fdFl7SLua1esgt7+scPskMJkhjrAXcUdeZHSCOiWRTDbq6L6IvJvK/3BN0q6XvPxHIL/b8PvBzuN/BRmJ8z+j/BdsnH07Y0KYJkFvP3TpdaruUnJU6cGmHT4ay3u4FoBVJF3mCZPu1Lk8=
+      secure: "CWFsZ/nbxnoi7dp+V9y8BUWWYbRCv3j3GjzBZ8lKL+/xb8luYViq+5h46MdIladzN03Z59msRNnC6cbVa9xu0fxE5QuwBirgm+xbFaP8owLog54rurNKCWBemvdVjfJX4GKiVTUEBlaK74K3ZbfluEWIn9WhOBWxjUDzq2rlYTY="
 env:
   global:
   - secure: MbAM25Xknlf0h9PXradze5PDULdNB5e9X48VOBXRw6FeqUAzaibOEel8ZFAg/nkSsmAGl3IyYeOLIb8pLcG2Bm2Btsi7KVbd3n7T8L2NI4LDELb2CnNFez1dGvcVtyjNbvSzfBZL/B+q/oJjC8IQAYytKdt3fh4x5kUumRAg05o=
@@ -31,5 +31,4 @@ deploy:
 cache:
   directories:
   - $HOME/.m2
-  - $HOME/.victims
   - $HOME/.sonar/cache
